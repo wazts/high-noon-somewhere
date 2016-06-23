@@ -32,9 +32,9 @@ moment.tz.names().forEach(function (tz) {
 if (availableTZ.length > 0) {
     // Random TZ
     var randomTZ = availableTZ[Math.floor(Math.random()*availableTZ.length)];
-
+    randomTZ = randomTZ.replace('_', ' ');
     // Send to Twitter
-    var message = randomTZ + ': It\'s high noon';
+    var message = randomTZ + ': It\'s high noon.';
 
     var client = new Twitter({
         consumer_key: config.twitterConsumerKey,
