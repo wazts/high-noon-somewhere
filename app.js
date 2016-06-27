@@ -34,7 +34,7 @@ if (availableTZ.length > 0) {
     var randomTZ = availableTZ[Math.floor(Math.random()*availableTZ.length)];
     randomTZ = randomTZ.replace('_', ' ');
     // Send to Twitter
-    var message = randomTZ + ': It\'s high noon.';
+    var message = randomTZ + ': It\'s High Noon.';
 
     var client = new Twitter({
         consumer_key: config.twitterConsumerKey,
